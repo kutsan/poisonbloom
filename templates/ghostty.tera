@@ -1,0 +1,34 @@
+---
+whiskers:
+  version: "^2.9.0"
+  matrix:
+    - flavor: ["latte", "mocha"]
+  filename: "themes/ghostty/Poisonbloom {% if flavor.dark %}Dark{% else %}Light{% endif %}.conf"
+  hex_format: "#{{r}}{{g}}{{b}}"
+---
+{%- set term = ansi[flavor.identifier] -%}
+background = {{ base.hex }}
+foreground = {{ text.hex }}
+
+cursor-color = {{ rosewater.hex }}
+cursor-text = {{ base.hex }}
+selection-background = #{{ selection[flavor.identifier].background }}
+selection-foreground = #{{ selection[flavor.identifier].foreground }}
+split-divider-color = {{ surface0.hex }}
+
+palette = 0=#{{ term.black }}
+palette = 1=#{{ term.red }}
+palette = 2=#{{ term.green }}
+palette = 3=#{{ term.yellow }}
+palette = 4=#{{ term.blue }}
+palette = 5=#{{ term.magenta }}
+palette = 6=#{{ term.cyan }}
+palette = 7=#{{ term.white }}
+palette = 8=#{{ term.bright_black }}
+palette = 9=#{{ term.bright_red }}
+palette = 10=#{{ term.bright_green }}
+palette = 11=#{{ term.bright_yellow }}
+palette = 12=#{{ term.bright_blue }}
+palette = 13=#{{ term.bright_magenta }}
+palette = 14=#{{ term.bright_cyan }}
+palette = 15=#{{ term.bright_white }}
