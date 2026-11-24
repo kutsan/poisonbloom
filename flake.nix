@@ -23,6 +23,7 @@
         bat = ./themes/bat;
         delta = ./themes/delta/poisonbloom.gitconfig;
         ghostty = ./themes/ghostty;
+        helix = ./themes/helix;
         nvim = ./themes/nvim/palette.lua;
         yazi = {
           poisonbloom-dark = ./themes/yazi/poisonbloom-dark.yazi;
